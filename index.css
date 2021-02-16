@@ -67,6 +67,7 @@ body {
 .category-box{
     width: 100%;
     text-align: center;
+    height: 500px;
 }
 
 .sub-box{
