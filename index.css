@@ -64,6 +64,39 @@ body {
     background-color: #c5ccd1;
 }
 
+.category-box{
+    width: 100%;
+    text-align: center;
+}
+
+.sub-box{
+    display: inline-block;
+    width: calc(100%/4);
+    margin: 1em;
+    box-shadow: 2px 2px black;
+    border: gray solid;
+    border-width: 2px;
+}
+
+.sub-box:hover{
+    background-color: lightgray;
+    box-shadow: 0px 0px;
+    padding: 0.5em;
+    font-size: x-large;
+}
+
+footer {
+    padding: 25px 0 15px 0;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+
 @media screen and (max-width: 414px) {
 
     .navbar ul { /* works without this too but saves space --> more width for search-bar*/
