@@ -4,10 +4,15 @@ body {
 }
 
 .navbar {
-  height: 60px;
-  background: #72a2c4;
-  display: block;
-  padding: 0px;
+    height: 60px;
+    background: #72a2c4;
+    display: block;
+    padding: 0px;
+}
+
+.navbar ul li a .logo{
+    width: 150px;
+    height: 60px;
 }
 
 .navbar ul {
@@ -63,6 +68,8 @@ body {
 .navbar .search-box .searchButton:hover {
     background-color: #c5ccd1;
 }
+
+
 
 .category-box{
     width: 100%;
