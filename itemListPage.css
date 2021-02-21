@@ -1,0 +1,47 @@
+:root {
+    --imageHeight: 150px;
+    --imageWidth: 150px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items {
+}
+
+.items .flex-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    height: var(--imageHeight);
+    
+    border: 2px solid lightgray; /* todo */
+}
+
+.flex-item .item-image {
+    height: var(--imageHeight);
+    width: var(--imageWidth);
+    /* margin: 0px 0px 0px 0px; */
+}
+
+.flex-item .item-description {
+    width: 70%;
+    padding: 0 10px;
+    /* todo */
+}
+
+.flex-item .item-button {
+    /* todo */
+}
+
+
+@media screen and (max-width: 414px) {
+
+
+}
