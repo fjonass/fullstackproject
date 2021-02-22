@@ -9,6 +9,7 @@ body {
 }
 
 .items {
+    margin: 0px 20px 0px 20px;
 }
 
 .items .flex-item {
@@ -19,29 +20,48 @@ body {
 
     margin: 50px 0px 50px 0px;
     width: 100%;
-    height: var(--imageHeight);
-    
-    border: 2px solid lightgray; /* todo */
+    height: 100%;
+
+    border: ridge lightgray;
+    border-width: 2px 0px 2px 0px;
 }
 
 .flex-item .item-image {
     height: var(--imageHeight);
     width: var(--imageWidth);
-    /* margin: 0px 0px 0px 0px; */
 }
 
 .flex-item .item-description {
     width: 70%;
     padding: 0 10px;
-    /* todo */
 }
 
-.flex-item .item-button {
-    /* todo */
+.flex-item .item-description .name {
+    font-weight: bold;
 }
 
+.flex-item .item-description .description {
+}
 
-@media screen and (max-width: 414px) {
+.flex-item .item-description .price {
+}
 
+.flex-item .item-button button {
+	background-color: #ced6db;
+	font-weight: bold;
+	color: rgb(50, 50, 50);
+    border: 1px solid #a4abaf;
+    border-radius: 6px;
+	padding: 7px 10px;
+    cursor: pointer;
+    outline: none;
+}
 
+.flex-item .item-button button:hover {
+	background-color: #c5ccd1;
+}
+
+.flex-item .item-button button:active {
+    position: relative;
+	top: 1px;
 }
