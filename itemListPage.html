@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="itemListPage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./sort.js"></script>
   </head>
   <body>
     <main>
@@ -36,6 +37,15 @@
         </ul>
       </div>
 
+
+      <div class="sort">
+          <button class="sortbtn" onclick="sortFunc()">Sort by</button>
+          <div class="sort-list" id="sort-l">
+            <a>Price</a>
+            <a>Name</a>
+            <a>popularity</a>
+          </div>
+      </div>
 
       <div class="items">
 

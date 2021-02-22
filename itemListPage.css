@@ -8,6 +8,48 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.sort{
+    float: right;
+    margin-right: 60px;
+}
+
+.sort{
+    position: relative;
+    display: inline-block;
+}
+
+.sortbtn {
+    background-color: #ffffff;
+    color: #72a2c4;
+    font-weight: bold;
+    padding: 5px 2em 5px 2em;
+    margin-top: 3px;
+    font-size: 16px;
+    border: solid 1px;
+    cursor: pointer;
+  }
+
+.sort-list{
+    display: none;
+    position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.sort-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.show{
+    display: block;
+}
+
 .items {
     margin: 0px 20px 0px 20px;
 }
