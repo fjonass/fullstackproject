@@ -83,12 +83,13 @@ body {
     display: inline-block;
     width: calc(100%/4);
     margin: 1em;
-    box-shadow: 2px 2px rgb(75, 75, 75);
+    box-shadow: 2px 2px 5px rgb(102, 102, 102);
     border: gray solid;
-    border-width: 2px;
+    border-width: 1px;
     height: 120px;
     cursor: pointer;
     font-weight: bolder;
+    border-radius: 5px;
 }
 
 .sub-box p{
