@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EZdeal EZshop</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="itemListPage.css" />
+    <link rel="stylesheet" href="cartPage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <main>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="./"
+              ><img class="logo"
+                src="./resources/ez.gif"
+                alt="Index"
+            /></a>
+            <!-- width and height are defined in index.css -->
+          </li>
+          <div class="search-box">
+              <input type="search" placeholder="Search"/>
+              <button type="submit" class="searchButton" onclick="javascript:location.href='./itemListPage'">
+              <i class="fa fa-search"></i>
+              </a>
+          </div>
+          <li>
+            <a href="./cartPage"
+              ><img
+                src="./resources/cart - Copy.png"
+                alt="Cart"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="items">
+
+        <!-- Item 01 prototype  -->
+        <div class="flex-item">
+          <div class="item-image">
+            <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
+          </div>
+          <div class="item-description">
+            <p class="name">Item name</p>
+            <p class="description">Item description </p>
+            <p class="price">Item price</p>
+          </div>
+          <div class="item-amount">
+            <span>1x</span>
+          </div>
+          <div class="item-button">
+            <button type="button">Remove all/one from Cart</button>
+          </div>
+        </div>
+
+        <div class="flex-item">
+          <div class="item-image">
+            <img class="item-image" src="./resources/prototype02.jpg" alt="item image"/>
+          </div>
+          <div class="item-description">
+            <p class="name">Walmart headphones</p>
+            <p class="description">This is a great product. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
+            <p class="price">$29.99</p>
+          </div>
+          <div class="item-amount">
+            <span>3x</span>
+          </div>
+          <div class="item-button">
+            <button type="button">Remove all/one from Cart</button>
+          </div>
+        </div>
+    
+      </div>
+
+      <div class="total-price">
+        <p class="price-label">Total Price:</p>
+        <p class="price-amount">$53.92</p>
+      </div>
+
+      <div class="buy-items">
+        <button type="button">Buy all items!</button>
+      </div>
+
+    </main>
+    <footer>
+      <p>copyright Natalie & Jonathan</p>
+      <p>2021 CS468 Full-stack final project</p>
+    </footer>
+  </body>
+</html>

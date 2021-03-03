@@ -37,6 +37,13 @@ app.get('/itemListPage', (req, res) => {
     });
 });
 
+app.get('/cartPage', (req, res) => {
+
+    res.render('cartPage', {
+        
+    });
+});
+
 app.listen(port, () => {
     console.log('Server is running at http://localhost:5001...');
 });
