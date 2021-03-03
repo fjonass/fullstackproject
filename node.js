@@ -2,13 +2,39 @@ const express = require('express'); // npm install express
 const app = express();
 const session = require('express-session'); // npm install express-session
 const path = require('path'); // npm install path
+const fs = require('fs'); // npm install fs
 const port = process.env.PORT || 5001;
 
-app.use(express.static(__dirname));
-// app.use(express.static("public"));
+// Template ejs
+app.set('views', __dirname + '');
+app.set('view engine', 'ejs'); // npm install ejs
+
+// Load .css files so that they work too
+app.use(express.static(__dirname + "/"));
+
+// Read JSON file
+var allData = fs.readFileSync('./resources/data/data.json');
+var data = JSON.parse(allData);
+
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + "/index.html"));
+    var test = "This is a test if EJS works";
+    var test2 = data[0].description;
+
+    // change data in index.ejs file (see footer for testing purpose) and display it
+    res.render('index', {
+        testi: test,
+        testi2: test2
+    });
+});
+
+app.get('/itemListPage', (req, res) => {
+    var testItem = data[0].name;
+
+    // change data in itemListPage.ejs file and display it
+    res.render('itemListPage', {
+        itemName: testItem
+    });
 });
 
 app.listen(port, () => {
