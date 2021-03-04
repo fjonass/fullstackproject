@@ -29,11 +29,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/itemListPage', (req, res) => {
-    var testItem = data[0].name;
+    var items = data;
 
     // change data in itemListPage.ejs file and display it
     res.render('itemListPage', {
-        itemName: testItem
+        items: items
     });
 });
 

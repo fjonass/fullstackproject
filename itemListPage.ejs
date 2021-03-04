@@ -47,7 +47,25 @@
           </div>
       </div>
 
+      
       <div class="items">
+
+        <!-- Items with .ejs -->
+        <% items.forEach((item) => { %>
+        <div class="flex-item">
+          <div class="item-image">
+            <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
+          </div>
+          <div class="item-description">
+            <p class="name"><%= item.name %></p>
+            <p class="description"><%= item.description %></p>
+            <p class="price">$<%= item.price %></p>
+          </div>
+          <div class="item-button">
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+        <% }); %>
 
         <!-- Item 01 prototype  -->
         <div class="flex-item">
@@ -55,7 +73,7 @@
             <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
           </div>
           <div class="item-description">
-            <p class="name"><%= itemName %></p>
+            <p class="name">Item Name</p>
             <p class="description">Item description </p>
             <p class="price">Item price</p>
           </div>
