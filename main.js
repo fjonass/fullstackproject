@@ -28,9 +28,10 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/itemListPage', (req, res) => {
+app.get('/itemListPage'+'(Electronic|Toys|Outdoor|Fashion|Office|Personal_Care|Pets|Books|Grocery)?', (req, res) => {
     var items = data;
-    var categorySearch = null;
+    // get corresponding category to show only corresponding items
+    var categorySearch = req.url.split("/itemListPage")[1].toLowerCase();
 
     // change data in itemListPage.ejs file and display it
     res.render('itemListPage', {

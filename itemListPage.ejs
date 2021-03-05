@@ -53,7 +53,7 @@
 
         <!-- Items with .ejs -->
         <% items.forEach((item) => { %>
-          <% if(item.category === category || category === null) { %>
+          <% if(item.category === category || category === "") { %>
         <div class="flex-item">
           <div class="item-image">
             <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
@@ -85,36 +85,6 @@
         </div>
         
         <!-- item 02 prototype  -->
-        <div class="flex-item">
-          <div class="item-image">
-            <img class="item-image" src="./resources/prototype02.jpg" alt="item image"/>
-          </div>
-          <div class="item-description">
-            <p class="name">Walmart headphones</p>
-            <p class="description">This is a great product. Buy it right now. This is the best product. This is interesting. Some text. Bla bla. Hello. Some text. Some text. Some text. Some text. Some text. Some text. Some text.</p>
-            <p class="price">$29.99</p>
-          </div>
-          <div class="item-button">
-            <button type="button">Add to Cart</button>
-          </div>
-        </div>
-
-        <!-- item 03 prototype  -->
-        <div class="flex-item">
-          <div class="item-image">
-            <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
-          </div>
-          <div class="item-description">
-            <p class="name">Walmart headphones</p>
-            <p class="description">This is a great product. Buy it right now. This is the best product. This is interesting. Some text. Bla bla.</p>
-            <p class="price">$29.99</p>
-          </div>
-          <div class="item-button">
-            <button type="button">Add to Cart</button>
-          </div>
-        </div>
-
-        <!-- item 04 prototype  -->
         <div class="flex-item">
           <div class="item-image">
             <img class="item-image" src="./resources/prototype02.jpg" alt="item image"/>

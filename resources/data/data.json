@@ -179,35 +179,35 @@
    "name": "fountain of youth water",
    "description": "zerr clon saz, beir mun tah, fus tar mazir",
    "price": 9999999,
-   "category": "personal care"
+   "category": "personal_care"
  },
  {
    "id": 27,
    "name": "skin lotion",
    "description": "fight of dry skin and return moiture to them",
    "price": 25,
-   "category": "personal care"
+   "category": "personal_care"
  },
  {
    "id": 28,
    "name": "shampoo",
    "description": "great fragrants and makes hair soft",
    "price": 24,
-   "category": "personal care"
+   "category": "personal_care"
  },
  {
    "id": 29,
    "name": "soap",
    "description": "great fragrants and makes body soft",
    "price": 24,
-   "category": "personal care"
+   "category": "personal_care"
  },
  {
    "id": 30,
    "name": "hair jelly",
    "description": "its hair gel",
    "price": 17,
-   "category": "personal care"
+   "category": "personal_care"
  },
  {
    "id": 31,
