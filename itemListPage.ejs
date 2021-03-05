@@ -24,7 +24,7 @@
           </li>
           <div class="search-box">
               <input type="search" placeholder="Search"/>
-              <button type="submit" class="searchButton" onclick="javascript:location.href='./itemListPage.html'">
+              <button type="submit" class="searchButton" onclick="javascript:location.href='./itemListPage'">
                 <i class="fa fa-search"></i>
           </div>
           <li>
@@ -52,6 +52,7 @@
 
         <!-- Items with .ejs -->
         <% items.forEach((item) => { %>
+          <% if(item.category === category || category === null) { %>
         <div class="flex-item">
           <div class="item-image">
             <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
@@ -62,10 +63,10 @@
             <p class="price">$<%= item.price %></p>
           </div>
           <div class="item-button">
-            <button type="button">Add to Cart</button>
+            <button type="button" id="button">Add to Cart</button>
           </div>
         </div>
-        <% }); %>
+        <% }}); %>
 
         <!-- Item 01 prototype  -->
         <div class="flex-item">

@@ -30,10 +30,12 @@ app.get('/', (req, res) => {
 
 app.get('/itemListPage', (req, res) => {
     var items = data;
+    var categorySearch = null;
 
     // change data in itemListPage.ejs file and display it
     res.render('itemListPage', {
-        items: items
+        items: items,
+        category: categorySearch
     });
 });
 
