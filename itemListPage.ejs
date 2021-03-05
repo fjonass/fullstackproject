@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="itemListPage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./sort.js"></script>
+    
   </head>
   <body>
     <main>
@@ -23,8 +24,8 @@
             <!-- width and height are defined in index.css -->
           </li>
           <div class="search-box">
-              <input type="search" placeholder="Search"/>
-              <button type="submit" class="searchButton" onclick="javascript:location.href='./itemListPage'">
+              <input type="search" placeholder="Search" id="search"/>
+              <button type="submit" class="searchButton" id="searchButton">
                 <i class="fa fa-search"></i>
           </div>
           <li>
@@ -36,7 +37,7 @@
           </li>
         </ul>
       </div>
-
+      <script src="./searchbar.js"></script>
 
       <div class="sort">
           <button class="sortbtn" onclick="sortFunc()">Sort by</button>
