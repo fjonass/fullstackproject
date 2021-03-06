@@ -56,7 +56,7 @@
 
         <!-- Items with .ejs -->
         <% items.forEach((item) => { %>
-          <% if(item.category === category || category === "") { %>
+          <% if(item.name.toLowerCase() === name.toLowerCase() || name === "" || item.name.toLowerCase().includes(name.toLowerCase())) { %>
         <div class="flex-item">
           <div class="item-image">
             <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>

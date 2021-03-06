@@ -21,8 +21,10 @@
             <!-- width and height are defined in index.css -->
           </li>
           <div class="search-box">
-              <input type="search" placeholder="Search"/>
-              <button type="submit" class="searchButton" onclick="javascript:location.href='./itemListPage'">
+            <form action="/search" method="POST">
+              <input type="search" placeholder="Search" name="cari"/>
+              <button type="submit" class="searchButton" >
+              </form>
                 <i class="fa fa-search"></i>
           </div>
           <li>
@@ -72,8 +74,8 @@
     <footer>
       <p>copyright Natalie & Jonathan</p>
       <p>2021 CS468 Full-stack final project</p>
-      <p><%= testi %></p>
-      <p><%= testi2 %></p>
+      <!--<p><%= testi %></p>-->
+      <!--<p><%= testi2 %></p>-->
     </footer>
   </body>
 </html>
