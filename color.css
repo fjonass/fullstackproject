@@ -1,0 +1,51 @@
+/******* color settings **********/
+   
+:root {
+
+    --gray1 : #050505;
+
+    /*-------- DARK ---------*/          
+    --dark-background: var(--gray1);
+    --dark-text : silver;	
+            
+    /*-------- LIGHT--------- */
+    --light-background: white;
+    --light-text : black;
+            
+    /*-------DEFAULT -------*/
+    --background-color: var(--light-background);
+    --text-color: var(--light-text);
+}
+
+#dark-mode:checked~label,
+#dark-mode:checked~.page {
+    --background-color: var(--dark-background);
+    --text-color: var(--dark-text);
+}
+
+#light-mode:checked~label,
+#light-mode:checked~.page {
+    --background-color: var(--light-background);
+    --text-color: var(--light-text);
+}		
+
+/*---------radio button to toggle light/dark  ----------*/
+input[name='color-scheme'],
+input[name='color-scheme']:checked+label {
+    display: none;
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
