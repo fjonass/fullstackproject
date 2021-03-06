@@ -94,6 +94,15 @@ body {
     width: 100%;
     display: inline-flex;
     justify-content: center;
+    /* border: 5px solid green; */
+}
+
+form {
+    margin: 0px;   
+    padding: 0px;
+    /* border: 5px solid red; */
+    width: 90%; /* % for resizing */
+    /* padding-bottom: 2px; */
 }
 
 .navbar .search-box input {
@@ -103,11 +112,12 @@ body {
     font-size: 22px;
     width: 80%; /* % for resizing */
     outline: none;
+    margin-right: -5px;
 }
 
 .navbar .search-box .searchButton {
     width: 30px;
-    height: 30px;
+    height: 26px;
     background-color: #ced6db;
     padding-left: 4px;
     border: 1px solid #fff;
@@ -115,16 +125,12 @@ body {
     cursor: pointer;
     outline: none;
     color: #555555;
-}
-
-form{
-    padding-bottom: 2px;
+    padding-top: 6px;
 }
 
 .navbar .search-box .searchButton:hover {
     background-color: #c5ccd1;
 }
-
 
 .content-box{
     width: 100%;
