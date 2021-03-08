@@ -36,7 +36,7 @@
  },
  {
    "id": 6,
-   "name": "RC supersonic car",
+   "name": "1132313",
    "description": "you will not be able to control this car. gonna go fast",
    "price": 400,
    "category": "toys"
@@ -313,12 +313,5 @@
    "description": "farm eggs, fresh, a dosen a pack",
    "price": 4,
    "category": "grocery"
- },
- {
-   "id": 46,
-   "name": "Mouse",
-   "description": "does not like cheese",
-   "price": 400,
-   "category": "electronic"
  }
 ]
