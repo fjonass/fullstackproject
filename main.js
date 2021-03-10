@@ -21,13 +21,10 @@ var data = JSON.parse(allData);
 
 
 app.get('/', (req, res) => {
-    var test = "This is a test if EJS works";
-    var test2 = data[0].description;
 
     // change data in index.ejs file (see footer for testing purpose) and display it
     res.render('index', {
-        testi: test,
-        testi2: test2
+     
     });
 });
 
