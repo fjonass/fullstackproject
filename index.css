@@ -357,3 +357,15 @@ footer p {
         padding: 0;
     }
 }
+
+@media screen and (max-width: 550px) {
+
+    /* categories for mobile screen */
+    .sub-box{
+        width: 90%;
+        margin: 0.6em;
+        font-size: x-large;
+        line-height: 20%;
+        /* border: 5px solid red; */
+    }
+   
