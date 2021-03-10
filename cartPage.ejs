@@ -34,10 +34,11 @@
             <!-- width and height are defined in index.css -->
           </li>
           <div class="search-box">
-              <input type="search" placeholder="Search"/>
-              <button type="submit" class="searchButton" onclick="javascript:location.href='./itemListPage'">
-              <i class="fa fa-search"></i>
-              </a>
+            <form action="/search" method="POST">
+              <input type="search" placeholder="Search" name="cari"/>
+              <button type="submit" class="searchButton" >
+              </form>
+                <i class="fa fa-search"></i>
           </div>
           <li>
             <a href="./cartPage"
