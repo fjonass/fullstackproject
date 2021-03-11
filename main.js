@@ -109,6 +109,11 @@ app.post('/search', (req, res) => {
     res.end();
 });
 
+/* 404 route, has to be the last route!!! */
+app.get('*', function(req, res){
+    res.status(404).send('<p style="font-size:160%;">Error 404! Page not found!</p>');
+  });
+
 
 app.listen(port, () => {
     console.log('Server is running at http://localhost:5001...');
