@@ -73,7 +73,7 @@ app.post('/search', (req, res) => {
     //res.writeHead(200, { 'Content-Type': 'text/html' });
     console.log(`search: ${req.body.cari}`);
     var seaArr = req.body.cari.toLowerCase();
-    sea = '/itemListPage' + seaArr;
+    sea = '/itemListPage' + '?category=' + seaArr;
 
     if(
     seaArr == 'electronic'|| 
