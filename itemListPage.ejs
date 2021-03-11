@@ -56,9 +56,11 @@
       <div class="sort">
           <button class="sortbtn" onclick="sortFunc()">Sort by</button>
           <div class="sort-list" id="sort-l">
-            <a>Price</a>
-            <a>Name</a>
-            <a>popularity</a>
+            <a href="?category=<%=category%>&sort=PriceAscending">Price (asc.)</a> 
+            <a href="?category=<%=category%>&sort=PriceDescending">Price (desc.)</a>
+            <a href="?category=<%=category%>&sort=NameAscending">Name (asc.)</a>
+            <a href="?category=<%=category%>&sort=NameDescending">Name (desc.)</a>
+            <a href="?category=<%=category%>&sort=NoSort">No sort</a>
           </div>
       </div>
 

@@ -19,6 +19,9 @@ app.use(express.static(__dirname + "/"));
 var allData = fs.readFileSync('./resources/data/data.json');
 var data = JSON.parse(allData);
 
+app.use(express.urlencoded({
+    extended: true
+  }))
 
 app.get('/', (req, res) => {
 
@@ -28,15 +31,20 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/itemListPage'+'(Electronic|Toys|Outdoor|Fashion|Office|Personal_Care|Pets|Books|Grocery)?', (req, res) => {
+app.get('/itemListPage', (req, res) => {
     var items = data;
-    // get corresponding category to show only corresponding items
-    var categorySearch = req.url.split("/itemListPage")[1].toLowerCase();
 
+    // get corresponding category to show only corresponding items
+    categorySearch = req.query.category.toLowerCase();
+
+    // sort items, sorts ALL items of database at the moment
+    var sort = req.query.sort;
+    items = sortProducts(items, sort);
+    
     // change data in itemListPage.ejs file and display it
     res.render('itemListPage', {
         items: items,
-        category: categorySearch
+        category: categorySearch,
     });
 });
 
@@ -48,8 +56,11 @@ app.get('/cartPage', (req, res) => {
 });
 
 app.get('/search', (req, res) => {
-
     var items = data;
+
+    // sort items, sorts ALL items of database at the moment
+    var sort = req.query.sort;
+    items = sortProducts(items, sort);
     
     // change data in itemListPage.ejs file and display it
     res.render('itemListPageSearch', {
@@ -57,11 +68,6 @@ app.get('/search', (req, res) => {
         name: sea2
     });
 });
-
-
-app.use(express.urlencoded({
-    extended: true
-  }))
 
 app.post('/search', (req, res) => {
     //res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -110,3 +116,36 @@ app.listen(port, () => {
 
 /*------------------------------------------*/
 
+function sortProducts(items, sort) {
+    // sort items if sort is not undefined
+    if (sort === "PriceAscending") {
+        items.sort((a, b) => {
+            return a.price - b.price;
+        });
+    } else if (sort === "PriceDescending") {
+        items.sort((a, b) => {
+            return b.price - a.price;
+        });
+    } else if (sort === "NameAscending") {
+        items.sort((a, b) => {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+            if (a < b) return -1;
+            else if (a > b) return 1;
+            else return 0;
+        });
+    } else if (sort === "NameDescending") {
+        items.sort((a, b) => {
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+            if (a < b) return 1;
+            else if (a > b) return -1;
+            else return 0;
+        });
+    } else if (sort === "NoSort") {
+        items.sort((a,b) => {
+            return a.id - b.id;
+        });
+    }
+    return items;
+}
