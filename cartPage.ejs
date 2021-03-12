@@ -64,6 +64,11 @@
             <p class="name"><%= item.name %></p>
             <p class="description"><%= item.description %></p>
             <p class="price">$<%= item.price %></p>
+            <div class="item-button-mobile">
+              <form method="POST" action ="/rcart">
+                <input type="hidden" name="id" value="<%= item.id %>">
+              <input class="buttonCart" type="submit" value="Remove">
+            </form>
           </div>
           <div class="item-amount">
           </div>

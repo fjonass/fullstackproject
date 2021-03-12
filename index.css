@@ -277,6 +277,7 @@ footer p {
 }
 
 .flex-item .item-button .buttonCart {
+    display: inline;
 	background-color: #ced6db;
 	font-weight: bold;
 	color: rgb(50, 50, 50);
@@ -285,6 +286,10 @@ footer p {
 	padding: 7px 10px;
     cursor: pointer;
     outline: none;
+}
+
+.flex-item .item-description .item-button-mobile .buttonCart {
+    display: none;
 }
 
 .flex-item .item-button .buttonCart:hover {
@@ -369,5 +374,22 @@ footer p {
         font-size: x-large;
         line-height: 20%;
         /* border: 5px solid red; */
+    }
+
+    .flex-item .item-description .item-button-mobile .buttonCart {
+        display: inline;
+        background-color: #ced6db;
+        font-weight: bold;
+        color: rgb(50, 50, 50);
+        border: 1px solid #a4abaf;
+        border-radius: 6px;
+        padding: 7px 10px;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+    }
+
+    .flex-item .item-button .buttonCart {
+        display: none;
     }
    
