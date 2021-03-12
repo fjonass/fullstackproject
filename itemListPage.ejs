@@ -15,9 +15,9 @@
 
 <!------------------------------------------------------->
 <input type="radio" id="dark-mode" value="dark-mode" name="color-scheme"> 
-			<label for="dark-mode" class="color-scheme"><img src="./resources/moon.png" width=20px></label> 
+			<label for="dark-mode" class="color-scheme"><img src="./resources/moon.png" width=20px alt="click to change to dark mode and light mode"></label> 
 		<input type="radio" id="light-mode" value="light-mode" name="color-scheme" checked="checked"> 
-			<label for="light-mode" class="color-scheme"><img src="./resources/sun.png" width=20px></label>
+			<label for="light-mode" class="color-scheme"><img src="./resources/sun.png" width=20px alt="click to change to dark mode and light mode"></label>
 		
 		<div class="page">
 
@@ -72,7 +72,7 @@
           <% if(item.category === category || category === "") { %>
         <div class="flex-item">
           <div class="item-image">
-            <img class="item-image" src="<%=item.picture%>" alt="item image"/>
+            <img class="item-image" src="<%=item.picture%>" alt="This is an image of the product: <%= item.name %> that you can buy."/>
           </div>
           <div class="item-description">
             <p class="name"><%= item.id %></p>
