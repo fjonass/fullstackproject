@@ -85,7 +85,7 @@
    "description": "better than real house, bring your modern luxury to your camping trip",
    "price": 8999,
    "category": "outdoor",
-   "picture": "https://images-na.ssl-images-amazon.com/images/I/71HmL4kzLrL._AC_SL1500_.jpg"
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71uPVDTKozL._AC_SL1500_.jpg"
  },
  {
    "id": 12,
@@ -125,7 +125,7 @@
    "description": "have you ever think of wearing summer style during winter, say no more.",
    "price": 450,
    "category": "fashion",
-   "picture": "./resources/prototype01.jpg"
+   "picture": "https://cdn.pixabay.com/photo/2021/02/19/06/35/winter-6029371_960_720.jpg"
  },
  {
    "id": 17,
@@ -133,7 +133,7 @@
    "description": "ever wanted glasses that could do everything. this glasses is equal to the smartest AI on the planet",
    "price": 2562,
    "category": "fashion",
-   "picture": "./resources/prototype01.jpg"
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/51Z7Y-yVquL._AC_SL1100_.jpg"
  },
  {
    "id": 18,
@@ -141,7 +141,7 @@
    "description": "innovation product. you can now have hands cover during the cold winter",
    "price": 34,
    "category": "fashion",
-   "picture": "./resources/prototype01.jpg"
+   "picture": "https://cdn.pixabay.com/photo/2018/02/10/20/37/socks-3144491_960_720.jpg"
  },
  {
    "id": 19,
@@ -149,7 +149,7 @@
    "description": "perfectly normal winter gloves",
    "price": 5,
    "category": "fashion",
-   "picture": "./resources/prototype01.jpg"
+   "picture": "https://cdn.pixabay.com/photo/2016/12/19/18/21/snow-1918794_960_720.jpg"
  },
  {
    "id": 20,
@@ -157,7 +157,7 @@
    "description": "if you need to attend yoga class but still wanted that denim look",
    "price": 14,
    "category": "fashion",
-   "picture": ""
+   "picture": "https://cdn.pixabay.com/photo/2014/08/26/21/48/jeans-428613_960_720.jpg"
  },
  {
    "id": 21,
@@ -245,7 +245,7 @@
    "description": "dogs loves this, get one for your favourite dog today",
    "price": 9,
    "category": "pets",
-   "picture": "https://images-na.ssl-images-amazon.com/images/I/11Dpp1WjWpL._AC_.jpg"
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81u1LWcYDNL._AC_SL1500_.jpg"
  },
  {
    "id": 32,
@@ -341,7 +341,7 @@
    "description": "enchance your eyes today with supercarrot",
    "price": 63,
    "category": "grocery",
-   "picture": "https://images-na.ssl-images-amazon.com/images/I/41ZInO1t2VL.jpg"
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81mNjtcGUhL._SL1500_.jpg"
  },
  {
    "id": 44,
@@ -349,7 +349,7 @@
    "description": "this is not a smartphone, its a fruit",
    "price": 7,
    "category": "grocery",
-   "picture": ""
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81xQBb5jRzL._SL1500_.jpg"
  },
  {
    "id": 45,
@@ -357,7 +357,7 @@
    "description": "farm eggs, fresh, a dosen a pack",
    "price": 4,
    "category": "grocery",
-   "picture": ""
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81JltZWJ7XL._SL1500_.jpg"
  },
  {
    "id": 46,
