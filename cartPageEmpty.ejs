@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="color.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./sort.js"></script>
-    
+    <script src="color.js"></script>
   </head>
   <body>
 
@@ -41,7 +40,6 @@
               </form>
                 <i class="fa fa-search"></i>
           </div>
-      
           <li>
             <a href="./cartPage"
               ><img
@@ -51,50 +49,25 @@
           </li>
         </ul>
       </div>
-      <script src="./searchbar.js"></script>
 
-      <div class="sort">
-          <button class="sortbtn" onclick="sortFunc()">Sort by</button>
-          <div class="sort-list" id="sort-l">
-            <a href="?sort=PriceAscending">Price (asc.)</a> 
-            <a href="?sort=PriceDescending">Price (desc.)</a>
-            <a href="?sort=NameAscending">Name (asc.)</a>
-            <a href="?sort=NameDescending">Name (desc.)</a>
-            <a href="?sort=NoSort">No sort</a>
-          </div>
-      </div>
 
-      
       <div class="items">
 
-        <!-- Items with .ejs -->
-        <% items.forEach((item) => { %>
-          <% if(item.name.toLowerCase() === name.toLowerCase() || name === "" || item.name.toLowerCase().includes(name.toLowerCase())) { %>
+        <!-- Item 01 prototype  -->
         <div class="flex-item">
-          <div class="item-image">
-            <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
-          </div>
-          <div class="item-description">
-            <p class="name"><%= item.name %></p>
-            <p class="description"><%= item.description %></p>
-            <p class="price">$<%= item.price %></p>
-          </div>
-          <div class="item-button">
-            <form method="POST" action ="/cart">
-              <input type="hidden" name="id" value="<%= item.id %>">
-            <input type="submit" value="Add to cart">
-          </form>
-          </div>
+          
+          <h1>CART EMPTY, KEEP SHOPPING</h1>
+          
         </div>
-        <% }}); %>
 
+    
       </div>
+
 
     </main>
     <footer>
       <p>copyright Natalie & Jonathan</p>
-      <p>2021 CS465 Full-stack final project</p>
+      <p>2021 CS468 Full-stack final project</p>
     </footer>
-  </div>
   </body>
 </html>

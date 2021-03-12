@@ -18,8 +18,7 @@ app.use(express.static(__dirname + "/"));
 // Read JSON file
 var allData = fs.readFileSync('./resources/data/data.json');
 var data = JSON.parse(allData);
-var cartData = fs.readFileSync('./resources/data/cart.json');
-var cdata = JSON.parse(cartData);
+
 
 app.use(express.urlencoded({
     extended: true
@@ -46,17 +45,38 @@ app.get('/itemListPage', (req, res) => {
     // change data in itemListPage.ejs file and display it
     res.render('itemListPage', {
         items: items,
-        category: categorySearch,
+        category: categorySearch
     });
 });
 
 app.get('/cartPage', (req, res) => {
+
+    //check if cart empty
+    var stats = fs.statSync('./resources/data/cart.json');
+    var x = 0;
+
+    if(stats.size == 0 || stats.size < 3){
+    res.render('cartPageEmpty', {
+    });
+    }
+
+    else{
+    var cartData = fs.readFileSync('./resources/data/cart.json');
+    var cdata = JSON.parse(cartData);
     var c_items = cdata;
+    
+    
+    for(var i = 0; i < cdata.length; i++)
+    {
+        x += cdata[i].price;
+    }
 
     res.render('cartPage', {
         c_items: c_items,
-        name: c_items
+        totalx: x
     });
+    }
+
 });
 
 app.get('/search', (req, res) => {
@@ -98,6 +118,62 @@ app.post('/search', (req, res) => {
         res.redirect('/search');
     }
 
+    res.end();
+});
+
+app.post('/cart', (req, res) => {
+    //send item ID to server
+    var stats = fs.statSync('./resources/data/cart.json');
+    var cartData = fs.readFileSync('./resources/data/cart.json');
+    if(stats.size > 0)
+    {
+        var cdata = JSON.parse(cartData);
+    }
+    else
+    {
+        var cdata = [];
+    }
+    var search_field = "id";
+    var search_value = req.body.id;
+
+    for (var i=0 ; i < data.length ; i++)
+    {
+        if (data[i][search_field] == search_value) {
+            cdata.push(data[i]);
+        }
+    }
+
+    fs.writeFile('./resources/data/cart.json', JSON.stringify(cdata), 'utf-8', function(err) {
+        if (err) throw err
+        console.log(`added to cart`);
+    })
+
+    //lastly redirect to cart page to see the item has been added
+    res.redirect('/cartPage');
+    res.end();
+});
+
+app.post('/rcart', (req, res) => {
+
+    var cartData = fs.readFileSync('./resources/data/cart.json');
+    var cdata = JSON.parse(cartData);
+    var search_field = "id";
+    var search_value = req.body.id;
+    var new_cdata = [];
+
+    for (var i=0 ; i < cdata.length ; i++)
+    {
+        if (cdata[i][search_field] != search_value) {
+            new_cdata.push(cdata[i]);
+        }
+    }
+
+    fs.writeFile('./resources/data/cart.json', JSON.stringify(new_cdata), 'utf-8', function(err) {
+        if (err) throw err
+        console.log(`removed from cart`);
+    })
+
+    res.redirect('/cartPage');
     res.end();
 });
 
