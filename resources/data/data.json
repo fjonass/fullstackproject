@@ -4,321 +4,367 @@
    "name": "Fullstack LCD 500\"",
    "description": "Ultimate performance LCD screen with a satisfying 500 inches screen size",
    "price": 1000000,
-   "category": "electronic"
+   "category": "electronic",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81nSaeP3AvL._AC_SL1500_.jpg"
  },
  {
    "id": 2,
    "name": "Baystation",
    "description": "Newest console with latest tech. Can play all games from any platform",
    "price": 50000,
-   "category": "electronic"
+   "category": "electronic",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/61zjj2sgXML._SL1500_.jpg"
  },
  {
    "id": 3,
    "name": "ezuz ideology laptop",
    "description": "Your best friend for those last minute assignment",
    "price": 3000,
-   "category": "electronic"
+   "category": "electronic",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/810BY5U9baL._AC_SL1500_.jpg"
  },
  {
    "id": 4,
    "name": "bytes headphone",
    "description": "feel the bass, feel the tremble, feel the beat",
    "price": 4000,
-   "category": "electronic"
+   "category": "electronic",
+   "picture": "./resources/prototype02.jpg"
  },
  {
    "id": 5,
    "name": "pear uPhone",
    "description": "we made the best smartphone and sell it cheap",
    "price": 200,
-   "category": "electronic"
+   "category": "electronic",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71MiNDiFz1L._AC_SL1500_.jpg"
  },
  {
    "id": 6,
    "name": "RC supersonic car",
    "description": "you will not be able to control this car. gonna go fast",
    "price": 400,
-   "category": "toys"
+   "category": "toys",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/61FRjbOo2JL._AC_SL1000_.jpg"
  },
  {
    "id": 7,
    "name": "ABC magnet learning",
    "description": "baby learn, baby study, baby abc",
    "price": 20,
-   "category": "toys"
+   "category": "toys",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81EL6jlXerL._AC_SL1500_.jpg"
  },
  {
    "id": 8,
    "name": "doll",
    "description": "its a doll",
    "price": 5,
-   "category": "toys"
+   "category": "toys",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81uUZnLpVPL._AC_SL1500_.jpg"
  },
  {
    "id": 9,
    "name": "cooking set with real food",
    "description": "lets play chef pretend and learn to develop creativity",
    "price": 19,
-   "category": "toys"
+   "category": "toys",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71%2BskbGmvuL._AC_SL1500_.jpg"
  },
  {
    "id": 10,
    "name": "cold wheels",
    "description": "broom brooom broomoomm, gas gas gas! gonna step on the gas",
    "price": 34,
-   "category": "toys"
+   "category": "toys",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/816GVPbWQ-L._AC_SL1500_.jpg"
  },
  {
    "id": 11,
    "name": "tent'o'matic",
    "description": "better than real house, bring your modern luxury to your camping trip",
    "price": 8999,
-   "category": "outdoor"
+   "category": "outdoor",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71HmL4kzLrL._AC_SL1500_.jpg"
  },
  {
    "id": 12,
    "name": "fireplace",
    "description": "outdoor fire set for those nice cold winter, fire sold seperately",
    "price": 354,
-   "category": "outdoor"
+   "category": "outdoor",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/61xJhwsNCWL._AC_SL1000_.jpg"
  },
  {
    "id": 13,
    "name": "jealous neighbour BBQ set",
    "description": "guarantee that every food cooked using the JN bbq set will be on par with mastercookerperson",
    "price": 4523,
-   "category": "outdoor"
+   "category": "outdoor",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81ez0o118KL._AC_SL1500_.jpg"
  },
  {
    "id": 14,
    "name": "quickscope 360 planetfall",
    "description": "a great telescope for those who wanted a quick look at outter space.",
    "price": 544,
-   "category": "outdoor"
+   "category": "outdoor",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71RuJ-h-JlL._AC_SL1500_.jpg"
  },
  {
    "id": 15,
    "name": "paintball set",
    "description": "its all the fun and games until you ran out of paintballs, balls sold seperately",
    "price": 258,
-   "category": "outdoor"
+   "category": "outdoor",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/61WKVdS%2B9tL._AC_SL1000_.jpg"
  },
  {
    "id": 16,
    "name": "summerlike winter wear jacket",
    "description": "have you ever think of wearing summer style during winter, say no more.",
    "price": 450,
-   "category": "fashion"
+   "category": "fashion",
+   "picture": "./resources/prototype01.jpg"
  },
  {
    "id": 17,
    "name": "FE-man smart glasses",
    "description": "ever wanted glasses that could do everything. this glasses is equal to the smartest AI on the planet",
    "price": 2562,
-   "category": "fashion"
+   "category": "fashion",
+   "picture": "./resources/prototype01.jpg"
  },
  {
    "id": 18,
    "name": "socks for hands",
    "description": "innovation product. you can now have hands cover during the cold winter",
    "price": 34,
-   "category": "fashion"
+   "category": "fashion",
+   "picture": "./resources/prototype01.jpg"
  },
  {
    "id": 19,
    "name": "winter gloves",
    "description": "perfectly normal winter gloves",
    "price": 5,
-   "category": "fashion"
+   "category": "fashion",
+   "picture": "./resources/prototype01.jpg"
  },
  {
    "id": 20,
    "name": "elastic jeans",
    "description": "if you need to attend yoga class but still wanted that denim look",
    "price": 14,
-   "category": "fashion"
+   "category": "fashion",
+   "picture": ""
  },
  {
    "id": 21,
    "name": "maximus office chair",
    "description": "upgrade your office with the latest office chair equip with massager and meeting canceller button",
    "price": 2600,
-   "category": "office"
+   "category": "office",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81QZctzpRvL._AC_SL1500_.jpg"
  },
  {
    "id": 22,
    "name": "ball pencil",
    "description": "this is not ink base, this is pure graphite pencil",
    "price": 20,
-   "category": "office"
+   "category": "office",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71y3UUoc1NL._AC_SL1500_.jpg"
  },
  {
    "id": 23,
    "name": "pen CIL 2000",
    "description": "This latest Chromate Induction Light (CIL) pen is the best pen on the market",
    "price": 30,
-   "category": "office"
+   "category": "office",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/51oipw32UkL._AC_SL1132_.jpg"
  },
  {
    "id": 24,
    "name": "printing paper",
    "description": "every pack contains 501 papers",
    "price": 21,
-   "category": "office"
+   "category": "office",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/819WeQ7R5SL._AC_SL1500_.jpg"
  },
  {
    "id": 25,
    "name": "office on the beach",
    "description": "buy an office near the beach today and enjoy the sunshine while having a meeting",
    "price": 5000000,
-   "category": "office"
+   "category": "office",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71pIlY2g39L._AC_SL1200_.jpg"
  },
  {
    "id": 26,
    "name": "fountain of youth water",
    "description": "zerr clon saz, beir mun tah, fus tar mazir",
    "price": 9999999,
-   "category": "personal_care"
+   "category": "personal_care",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71i6X8baNYL._AC_SL1500_.jpg"
  },
  {
    "id": 27,
    "name": "skin lotion",
    "description": "fight of dry skin and return moiture to them",
    "price": 25,
-   "category": "personal_care"
+   "category": "personal_care",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71fpYAPvK%2BL._SL1500_.jpg"
  },
  {
    "id": 28,
    "name": "shampoo",
    "description": "great fragrants and makes hair soft",
    "price": 24,
-   "category": "personal_care"
+   "category": "personal_care",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/81MG1oQCU6L._SL1500_.jpg"
  },
  {
    "id": 29,
    "name": "soap",
    "description": "great fragrants and makes body soft",
    "price": 24,
-   "category": "personal_care"
+   "category": "personal_care",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/811Eqd-vu0L._SL1500_.jpg"
  },
  {
    "id": 30,
    "name": "hair jelly",
    "description": "its hair gel",
    "price": 17,
-   "category": "personal_care"
+   "category": "personal_care",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71qK07AXSxL._SL1500_.jpg"
  },
  {
    "id": 31,
    "name": "chewing bone",
    "description": "dogs loves this, get one for your favourite dog today",
    "price": 9,
-   "category": "pets"
+   "category": "pets",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/11Dpp1WjWpL._AC_.jpg"
  },
  {
    "id": 32,
    "name": "pet house with swimming pool",
    "description": "every wanted your pet to have a better house than yourself, here it is",
    "price": 600,
-   "category": "pets"
+   "category": "pets",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/71h1%2BN47vFL._AC_SL1000_.jpg"
  },
  {
    "id": 33,
    "name": "dragon",
    "description": "real dragon for sale, it breathes fire otherwise very tame. ",
    "price": 3000,
-   "category": "pets"
+   "category": "pets",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/716hJn5bhbL._AC_SL1500_.jpg"
  },
  {
    "id": 34,
    "name": "universal pet food",
    "description": "you can feed any pets this food and they will eat it.",
    "price": 58,
-   "category": "pets"
+   "category": "pets",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/61Aq4w-qzZL._AC_SL1200_.jpg"
  },
  {
    "id": 35,
    "name": "brush",
    "description": "give your pet a loving tender care with a soft pet brush",
    "price": 29,
-   "category": "pets"
+   "category": "pets",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/61dESAHs8JL._AC_SL1200_.jpg"
  },
  {
    "id": 36,
    "name": "Tales of commonplace",
    "description": "light and easy reading, a collection of many interesting stories",
    "price": 15,
-   "category": "books"
+   "category": "books",
+   "picture": "https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg"
  },
  {
    "id": 37,
    "name": "magic grimmore",
    "description": "learn magic today, get yours to the checkout now",
    "price": 999,
-   "category": "books"
+   "category": "books",
+   "picture": "https://cdn.pixabay.com/photo/2015/11/19/21/11/book-1052014_960_720.jpg"
  },
  {
    "id": 38,
    "name": "goodnight kids",
    "description": "a collection of bedtime story, perfect for putting your kids to sleep with an educational message",
    "price": 31,
-   "category": "books"
+   "category": "books",
+   "picture": "https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_960_720.jpg"
  },
  {
    "id": 39,
    "name": "fullstack textbook",
    "description": "learn the correct way to make a website",
    "price": 45,
-   "category": "books"
+   "category": "books",
+   "picture": "https://cdn.pixabay.com/photo/2015/04/20/13/18/notebook-731212_960_720.jpg"
  },
  {
    "id": 40,
    "name": "cinderella remix",
    "description": "an alternate universe cinderella",
    "price": 124,
-   "category": "books"
+   "category": "books",
+   "picture": "https://cdn.pixabay.com/photo/2017/03/17/18/23/book-2152349_960_720.jpg"
  },
  {
    "id": 41,
    "name": "sausages",
    "description": "a package of sausage, fresh from the oven",
    "price": 5,
-   "category": "grocery"
+   "category": "grocery",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/91akXGfZb1L._SL1500_.jpg"
  },
  {
    "id": 42,
    "name": "beer",
    "description": "barley drink with hops",
    "price": 3,
-   "category": "grocery"
+   "category": "grocery",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/51845xlYXNL._SL1100_.jpg"
  },
  {
    "id": 43,
    "name": "carrots",
    "description": "enchance your eyes today with supercarrot",
    "price": 63,
-   "category": "grocery"
+   "category": "grocery",
+   "picture": "https://images-na.ssl-images-amazon.com/images/I/41ZInO1t2VL.jpg"
  },
  {
    "id": 44,
    "name": "apple",
    "description": "this is not a smartphone, its a fruit",
    "price": 7,
-   "category": "grocery"
+   "category": "grocery",
+   "picture": ""
  },
  {
    "id": 45,
    "name": "eggs",
    "description": "farm eggs, fresh, a dosen a pack",
    "price": 4,
-   "category": "grocery"
+   "category": "grocery",
+   "picture": ""
  },
  {
    "id": 46,
    "name": "Mouse",
    "description": "does not like cheese",
    "price": 400,
-   "category": "electronic"
+   "category": "electronic",
+   "picture": "./resources/prototype01.jpg"
  }
 ]

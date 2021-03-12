@@ -72,7 +72,7 @@
           <% if(item.name.toLowerCase() === name.toLowerCase() || name === "" || item.name.toLowerCase().includes(name.toLowerCase())) { %>
         <div class="flex-item">
           <div class="item-image">
-            <img class="item-image" src="./resources/prototype01.jpg" alt="item image"/>
+            <img class="item-image" src="<%=item.picture%>" alt="item image"/>
           </div>
           <div class="item-description">
             <p class="name"><%= item.name %></p>
