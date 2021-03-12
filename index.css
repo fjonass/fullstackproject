@@ -276,7 +276,7 @@ footer p {
 .flex-item .item-description .price {
 }
 
-.flex-item .item-button button {
+.flex-item .item-button .buttonCart {
 	background-color: #ced6db;
 	font-weight: bold;
 	color: rgb(50, 50, 50);
@@ -287,11 +287,11 @@ footer p {
     outline: none;
 }
 
-.flex-item .item-button button:hover {
+.flex-item .item-button .buttonCart:hover {
 	background-color: #c5ccd1;
 }
 
-.flex-item .item-button button:active {
+.flex-item .item-button .buttonCart:active {
     position: relative;
 	top: 1px;
 }
