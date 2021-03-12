@@ -18,6 +18,8 @@ app.use(express.static(__dirname + "/"));
 // Read JSON file
 var allData = fs.readFileSync('./resources/data/data.json');
 var data = JSON.parse(allData);
+var cartData = fs.readFileSync('./resources/data/cart.json');
+var cdata = JSON.parse(cartData);
 
 app.use(express.urlencoded({
     extended: true
@@ -49,9 +51,11 @@ app.get('/itemListPage', (req, res) => {
 });
 
 app.get('/cartPage', (req, res) => {
+    var c_items = cdata;
 
     res.render('cartPage', {
-        
+        c_items: c_items,
+        name: c_items
     });
 });
 
@@ -94,18 +98,6 @@ app.post('/search', (req, res) => {
         res.redirect('/search');
     }
 
-   /* res.write(`<br>`);
-    res.write(`Email: ${req.body.Emaill}`);
-    res.write(`<br>`);
-    if(req.body.subject)
-        res.write(`Comment: ${req.body.subject}`);
-    else
-        res.write(`Comment: n/a`);
-    res.write(`<br>`);
-    if(req.body.check)
-        res.write(`Newsletter: Yes, I would like to sign up for the newsletter.`);
-    else
-        res.write(`No, thank you.`);*/
     res.end();
 });
 
