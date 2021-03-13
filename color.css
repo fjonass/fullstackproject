@@ -35,9 +35,10 @@ input[name='color-scheme']:checked+label {
     display: none;
 }
 
+
 .color-scheme {
-    position: absolute;
-    top: 1px;
+    position: fixed;
+    bottom: 0;
     right: 1px;
     text-align: center;
     user-select: none;
@@ -45,7 +46,15 @@ input[name='color-scheme']:checked+label {
     background: rgba(0, 0, 0, 0.0);
 }
 
+
 .page {
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+@media screen and (max-width: 550px) {
+    
+    
+
+    
 }
