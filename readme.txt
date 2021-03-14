@@ -13,6 +13,7 @@ https://jouni.kantola.se/blog/2020-02-29/dark-mode-toggle/
 html and css help
 https://www.w3schools.com/
 
-
+Graphic designs
+https://www.canva.com/
 
 
